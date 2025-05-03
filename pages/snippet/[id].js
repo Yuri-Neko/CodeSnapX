@@ -3,12 +3,12 @@ import { useRouter } from 'next/router';
 import { motion } from 'framer-motion';
 import { FiSave, FiX, FiCode } from 'react-icons/fi';
 import toast from 'react-hot-toast';
-import Layout from '../components/Layout';
-import CodeEditor from '../components/CodeEditor';
-import LoadingSpinner from '../components/LoadingSpinner';
-import { getBestUserIdentifier } from '../lib/userIdentifier';
-import { generateSnippetId } from '../lib/utils';
-import supabase from '../lib/supabase';
+import Layout from '@components/Layout';
+import CodeEditor from '@components/CodeEditor';
+import LoadingSpinner from '@components/LoadingSpinner';
+import { getBestUserIdentifier } from '@lib/userIdentifier';
+import { generateSnippetId } from '@lib/utils';
+import supabase from '@lib/supabase';
 
 export default function NewSnippet() {
   const router = useRouter();
