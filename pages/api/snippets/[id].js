@@ -4,13 +4,13 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { FiArrowLeft, FiExternalLink, FiEye, FiCopy, FiCode, FiCalendar, FiUser } from 'react-icons/fi';
 import toast from 'react-hot-toast';
-import Layout from '../../components/Layout';
-import CodeEditor from '../../components/CodeEditor';
-import LikeButton from '../../components/LikeButton';
-import CopyButton from '../../components/CopyButton';
-import LoadingSpinner from '../../components/LoadingSpinner';
-import { formatDate, formatNumber } from '../../lib/utils';
-import supabase from '../../lib/supabase';
+import Layout from '@components/Layout';
+import CodeEditor from '@components/CodeEditor';
+import LikeButton from '@components/LikeButton';
+import CopyButton from '@components/CopyButton';
+import LoadingSpinner from '@components/LoadingSpinner';
+import { formatDate, formatNumber } from '@lib/utils';
+import supabase from '@lib/supabase';
 
 export default function SnippetDetail() {
   const router = useRouter();
