@@ -1,4 +1,4 @@
-import supabase from '../../../lib/supabase';
+import supabase from '@lib/supabase';
 
 // API route for listing and creating snippets
 export default async function handler(req, res) {
